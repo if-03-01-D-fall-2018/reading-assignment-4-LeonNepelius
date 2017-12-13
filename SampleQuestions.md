@@ -1,5 +1,5 @@
 ### IF.03.01 Basic Web Techniques
-# Reading Assignment 1: WWW and html
+# Reading Assignment 1: Advanced CSS
 
 ## Box Model
 1. Block elements have which kind of characteristics?
