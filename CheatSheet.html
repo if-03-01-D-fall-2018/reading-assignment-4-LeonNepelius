@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta encoding="utf-8" />
+    <title>Cheatsheet</title>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <h1><center>Cheatsheet</center></h1>
+    <h2>Reading Assigment One - Hello World</h2>
+	<p>
+        <strong>World Wide Web</strong>
+        <br><em>It was mainly developed by <strong>Tim Berners</strong> Lee's. Here's a little timeline.</em>
+        <br><em>1988: </em>First IP Connection between North america and europa
+        <br><em>1089: </em>a proposal for a System called Mesh which described a more elaberate information management based on links in a readable text/hyperlinks
+        <br><em>1990: </em>Hypertextproject WorldWideWeb -> a web of hypertext-documents which are viewed by browsers
+        <br><em>1993: </em>the World Wide Web got free to anyone and the Mosaic Webbrowser was released
+        <br><i>The internet and the World Wide Web are not the same thing!</i>
+        <br><em>There are a couple of reasons why the World Wide Web was such a success.</em> One of them is the fact, that the Internet and Hypertext were married for the first time. Also these three technologies were essential for the development of
+        the World Wide Web as we know it.
+        <br><i>The <strong>URL</strong> (uniform resource locator) and <strong>URI</strong>(uniform resource identifier), or former UDI (universal document identifier) is a system for (globally) unique identifiers for resources on the Web</i>
+        <br><i>HTML aka <b>H</b>yper<b>t</b>ext <b>M</b>arkup <b>L</b>>anguage</i>
+        <br><i>HTTP aka The <b>H</b>yper<b>t</b>ext <b>T</b>ransfer <b>P</b>rotocol</i>
+        <br><i>It also had unidirectional links rather than bidirectional links</i>
+        <br><em>More infos to the URL: </em>
+        <br>It is also called web adress, even though this is just colloquially, and it is a reference to a (web) resource that specifies a location on a computer network and it's a mechanism for calling this resource up.
+        <br>The URL is often confused with the URI(Uniform Resource Identifier) even thoug it's just a specific form of an URI.
+        <br>The syntax can be very simple or a little bit complicated, it completely depends on the specifix URL. For example it could be [scheme]:[path] which is basically the simplest form.
+        <br>Now you can build on this our "own" URL. After the [scheme]: you can add "//[host]" and after [path] "?[query]"so it would be [scheme]://[host][path]?[query]. But up on this you can build even more stuff.
+        <br>After the "//" we can add "userinfo@" and after the "[host]" you can add ":[port]" so it finally would be <em>[scheme]://[userinfo]@[host]:[port][path]?[query]</em>
+        <br>Some possibles schemes are http, https, ftp, mailto and so on.
+    </p>
+    <p>
+        <strong>Web Server</strong>
+        <br>A webserver shall store, process and deliver webpages to clients. The communication between the server and the client takes place using http. Mostly delivered are HTML Documents.
+        <br>A web browser or a web crawler starts to communicate by making a request for a specific resource using HTTP or HTTPS. The server responds with the resource or an error.
+        <br>But content can also be received from clients. This is used e.g. for web forms.
+        <br>A lot of generic web servers nowadays also support server side scripting using a couple of scripting languages like PHP.
+    </p>
+    <p>
+        <strong>Web Client</strong>
+        <br>Also known as Web Browser, a web client is an application for accessing information on the world wide web. It fetches information resources and displays them to an end device like a computer.
+        <br>The process is the following: The user inputs a URL, the rendering engine of the browser renders it and then displays it.
+    </p>
+    <p>
+        <strong>Hello World</strong>
+        <br><em>About Doctype</em>
+        <br>The &lt!DOCTYPE&gt on the head of a html document exists to show the browser the version of html that is used. It's not always required but you should still use it always.
+        <br><em>About the body element</em>
+        <br>The &ltbody&gt element contains all of the contents such as text, images and other.
+        <br><em>About the em element</em>
+        <br>The &ltem&gt tag is used to show important text that should be higlighted from the rest of the text.
+        <br><em>About the head element</em>
+        <br>The &lthead&gt element contains all of the metadata and things like the &ltstyle&gt tag, the &ltscript&gt tag or the &ltlink&gt tag.
+        <br><em>About the html tag</em>
+        <br>The &lthtml&gt element shows the browser that the following document is a html document. It also is the root for all of the other tags and elements of the html document.
+        <br><em>About the strong element</em>
+        <br>The &ltstrong&gt exists for basically the same reason as the &ltem&gt tag. It just has a other style, it's kinda bold, which is also very useful sometimes.
+        <br><em>About the title element</em>
+        <br>The &lttitle&gt element is required in a html document, it is basically just the title of the document. It is between the &lthead&gt tags.
+    </p>
+    <hr>
+	    <h2>Reading Assigment Two - Css + Html</h2>
+		<strong>HTML Documents - Basic</strong>
+		<p>
+			<br>All HTML documents must start with a document type declaration: <strong>&lt!DOCTYPE html&gt</strong>.
+			<br>The HTML document itself begins with <strong>&lthtml&gt</strong>and ends with <strong>&lt/html&gt</strong>.
+			<br>The visible part of the HTML document is between <strong>&ltbody&gt</strong> and <strong>&lt/body&gt</strong>.
+			<br>HTML headings are defined with the <strong>&lth1&gt</strong> to <strong>&lth6&gt</strong> tags.
+			<br>HTML paragraphs are defined with the <strong>&ltp&gt</strong> tag.
+      <br>HTML <strong>links</strong> are defined with the <strong>&lta&gt</strong> tag.
+			<br><em>Example: &lta&gt href="https://example.com">This ist the Link&lt/a&gt. </em>
+			<br>HTML images are defined with the<strong>&ltimg&gt</strong> tag.
+			<br>The source file (src), alternative text (alt), width, and height are provided as attributes.
+			<br><em>Example: &ltimg src ="w3schools.jpg" alt="W3Schools.com" width="104" height="142"></em>
+			<br>HTML buttons are defined with the <strong>&ltbutton&gt</strong> tag.
+			<br><em>Example: &ltbutton&gtClick me&lt/button&gt </em>
+			<br>HTML lists are defined with the &ltul&gt (unordered/bullet list) or the &ltol&gt (ordered/numbered list) tag, followed by &ltli&gt tags (list items).
+			<br><em>Example: &ltu1&gt </em>
+			<br><em>&ltli&gtCoffee&lt/li&gt </em>
+			<br><em>&ltli&gtTea&lt/li&gt </em>
+			<br><em>&ltli&gtMilk&lt/li&gt </em>
+			<br><em>&lt/u1&gt </em>
+			<br>Add a Horizontal Line with the tag <strong>&lthr&gt</strong>.
+			<br>You can add <strong>comments</strong> by using following syntax:
+			<br>&lt!-- <em>Write your comment here </em> --&gt
+			<h3> More about Links </h3>
+			<br>The <strong>target</strong> attribute specifies where to open the <strong>linked</strong> document.
+			<ul>
+			<li>_blank - Opens the linked Document in a <strong>new Window or tab</strong> </li>
+			<li>_self - Opens the linked Document in the <strong>same window/tab</strong> as is was clicked (this is <strong>default</strong> </li>
+			<li>_parent - Opens the linked Document in the <strong>parent frame</strong> </li>
+			<li>_top - Opens the linked Document in the <strong>full body of the window</strong> </li>
+			<li><em>framename </em> - Opens the linked Document in a <strong>named frame</strong> </li>
+			</ul>
+			<br>The <strong>title</strong> attribute specifies extra informations about an element. The Information is most often shown as a tooltip text when the mouse moves over the element.
+			<br><em>Example: &lta href="https://www.example.com/html/" title="Go to a example">Visit our example&lt/a&gt </em>
+			<br>You can use a <strong>full URL link</strong> to a web page<em> Example: href="https://www.example.com/example1/default.asp" </em>
+			<br>Or for the <strong>html folder in the current web site</strong><em> Example: href="/html/default.asp" </em>
+			<br>Or to a page <strong>located in the same folder as the current web site</strong><em> Example: href="default.asp" </em>
+      <h3> Bookmarks </h3>
+			<br>HTML bookmarks are used to allow readers to jump to specific parts of a Web page and it´s useful if the webpage is very long.
+			<br>First, create a bookmark with the <strong>id</strong> attribute:
+			<br><em>&lth2 id="C4">Chapter 4&lt/h2&gt  </em>
+			<br>Then, add a link to the bookmark ("Jump to Chapter Four"), from the <strong>same</strong> page:
+			<br><em>&lta href ="#C4">Jump to Chapter 4&lt/a&gt </em>
+			<br>Or, add a link to the bookmark ("Jump to Chapter 4"), from <strong>another</strong> page:
+			<br><em>&lta href="html_demo.<strong>#C4</strong>>Jump to Chapter 4&lt/a&gt </em>
+			<h3>Images</h3>
+			<br>If the image is in another folder you must write:
+			<br><em>&ltimg src="/images/html5.gif" ... </em>
+			<br>If the image is in another server you must write in src the <strong>full URL</strong>.
+			<h3>head Element </h3>
+			<br>The &lthead&gt element is a container for metadata (data about data) and is placed between the &lthtml&gt tag and the &ltbody&gt tag.
+			<br>HTML metadata is data about the HTML document. Metadata is not displayed.
+			<br>Metadata typically define the document title, character set, styles, links, scripts, and other meta information.
+			<br>The following tags describe metadata: &lttitle&gt, &ltstyle&gt, &ltmeta&gt, &ltlink&gt, &ltscript&gt and &ltbase&gt.
+      <h3>title Element </h3>
+			<br>The &lttitle&gt element defines the title of the document, and is required in all HTML/XHTML documents.
+			<br>The &lttitle&gt element:
+			<ul>
+			<li>defines a title in the browser tab </li>
+			<li>provides a title for the page when it is added to favorites </li>
+			<li>displays a title for the page in search engine results </li>
+			</ul>
+			<h3>meta Element </h3>
+			<br>The <strong>&ltmeta&gt</strong> element is used to specify which character set is used, page description, keywords, author, and other metadata.
+			<br>Metadata is used by browsers (how to display content), by search engines (keywords), and other web services.
+			<br><strong>Define the character set used:</strong>
+			<br><em>&ltmeta charset="UTF-8"&gt </em>
+			<br><strong>Define a description of your web page:</strong>
+			<br><em>&ltmeta name="description" content="Free Web tutorials"&gt </em>
+			<br><strong>Define keywords for search engines:</strong>
+			<br><em>&ltmeta name="keywords" content="HTML, CSS, XML, JavaScript"&gt </em>
+			<br><strong>Define the author of a page:</strong>
+			<br><em>&ltmeta name="author" content="Leon Nepelius"&gt </em>
+			<br><strong>Refresh document every 30 seconds:</strong>
+			<br><em>&ltmeta http-equiv="refresh" content="30"&gt </em>
+			<br><h3>CSS</h3>
+			<br>The selector points to the HTML element you want to <strong>style</strong>.
+			<br>The declaration block contains one or more declarations <strong>separated by semicolons</strong>.
+			<br>Each declaration includes a CSS property name and a value, separated by a colon.
+			<br>A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.
+      <br>
+			<br>In the following example <strong>all &ltp&gt elements</strong> will be center-aligned, with a red text color:
+			<br><em>p { </em>
+			<br><em>color: red; </em>
+			<br><em>text-align: center; </em>
+			<br><em>} </em>
+			<br>If you have elements with the <strong>same style definations</strong>, you can <strong>group</strong> these elements:
+			<br><em>h1, h2, p { </em>
+			<br><em>color: red; </em>
+			<br><em>text-align: right; </em>
+			<br><em>} </em>
+			<br>A CSS <strong>comment</strong> starts with /* and ends with */. Comments can also span multiple lines
+			<h3>Colors</h3>
+			<strong>Background</strong>
+      <br>
+			<br>The <strong>background-color</strong> property specifies the background color of an element.
+			<br><em>Example: </em>
+			<br><em>body { </em>
+			<br><em>background-color: lightblue; </em>
+			<br><em>} </em>
+			<br>The <strong>background-image</strong> property specifies an image to use as the background of an element.
+			<br>By default, the image is repeated so it covers the entire element.
+			<br><em>Example: </em>
+			<br><em>body { </em>
+			<br><em>background-image: url("paper.gif"); </em>
+			<br><em>} </em>
+			<br>If the image above is <strong>repeated</strong> only horizontally (background-repeat: repeat-x;), the background will look better:
+			<br><em>Example: </em>
+			<br><em>body { </em>
+			<br><em>background-image: url("gradient_bg.png"); </em>
+			<br><em>background-repeat: repeat-x; </em>
+			<br><em>} </em>
+			<br>To specify that the background image should be <strong>fixed</strong> (will not scroll with the rest of the page), use the background-attachment property:
+			<br><em>Example: </em>
+			<br><em>body { </em>
+			<br><em>background-image: url("img_tree.png"); </em>
+			<br><em>background-repeat: repeat-x; </em>
+			<br><em>background-position: right top; </em>
+			<br><em>background-attachment: fixed; </em>
+			<br><em>} </em>
+			<br><h3>Text</h3>
+      <br><strong>Text Color</strong>
+      <br>
+			<br><em>Example: </em>
+			<br><em>body { </em>
+			<br><em><strong>color</strong>: blue; </em>
+			<br><em><strong>text-align</strong>: center/right/left; </em>
+			<br><em>} </em>
+			<br>The <strong>text-decoration</strong> property is used to set or remove decorations from text.
+			<br>The value text-decoration: none; is often used to remove underlines from links.
+			<br><em>p { </em>
+			<br><em>text-decoration: none/overline/line-through/underline; </em>
+			<br><em>} </em>
+			<br>The <strong>text-transform</strong> property is used to specify uppercase and lowercase letters in a text.
+			<br>It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word
+			<br><em>p.uppercase/lowercase/capitalize { </em>
+			<br><em>text-transform: uppercase/lowercase/capitalize; </em>
+			<br><em>} </em>
+			<br><h3>Fonts</h3>
+			<br>In CSS, there are <strong>two types of font family</strong> names:
+			<ul>
+			<li><strong>generic family</strong> - a group of font families with a similar look (like "Serif" or "Monospace"). </li>
+			<li><strong>font family</strong> - a specific font family (like "Times New Roman" or "Arial") </li>
+			</ul>
+			<br><h4>Serif:</h4>
+			<br>Front family: Times New Roman
+			<br>Description: Serif fonts have small lines at the ends on some characters
+			<br><h4>Sans-Serif:</h4>
+			<br>Front family: Arial Verdana
+			<br>Description: "Sans" means without - these fonts do not have the lines at the ends of characters
+      <br>
+			<br>The font family of a text is set with the <strong>font-family</strong> property.
+			<br>The font-family property should hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font, and so on.
+			<br>Start with the font you want, and end with a generic family, to let the browser pick a similar font in the generic family, if no other fonts are available.
+			<br>Note: If the name of a font family is more than one word, it must be in quotation marks, like: "Times New Roman".
+			<br><em>p { </em>
+			<br><em>font-family: "Times New Roman", Times, serif; </em>
+			<br><em>} </em>
+      <br>The <strong>font-style</strong> property is mostly used to specify italic text.
+			<br>This property has three values:
+			<ul>
+			<li>normal - The text is shown normally </li>
+			<li>italic - The text is shown in italics </li>
+			<li>oblique - The text is "leaning" (oblique is very similar to italic, but less supported) </li>
+			</ul>
+			<br><em>p.normal/italic/oblique { </em>
+			<br><em>font-style: normal/italic/oblique; </em>
+			<br><em>} </em>
+			<br>The <strong>font-size</strong> property sets the size of the text.
+			<br>Being able to manage the text size is important in web design. However, you should not use font size adjustments to make paragraphs look like headings, or headings look like paragraphs.
+			<br>Always use the proper HTML tags, like &lth1> - &lth6> for headings and &ltp> for paragraphs.
+			<br>The font-size value can be an absolute, or relative size.
+			<br><strong>Absolute size:</strong>
+			<ul>
+			<li>Sets the text to a specified size </li>
+			<li>Does not allow a user to change the text size in all browsers (bad for accessibility reasons) </li>
+			<li>Absolute size is useful when the physical size of the output is known </li>
+			</ul>
+			<br><strong>Relative size:</strong>
+			<ul>
+			<li>Sets the size relative to surrounding elements </li>
+			<li>Allows a user to change the text size in browsers </li>
+			</ul>
+			<br><strong>16px=1em</strong>
+      <br>
+			<br>Setting the text <strong>size with pixels</strong> gives you full control over the text size:
+			<br><em>p { </em>
+			<br><em>font-size: 40px/30px/...; </em>
+			<br><em>} </em>
+			<br>To allow users to resize the text (in the browser menu), many developers use <strong>em</strong> instead of pixels.
+			<br><em>p { </em>
+			<br><em>font-size: 2.5em/1.875em/...; </em>
+			<br><em>} </em>
+			<br>The <strong>font-weight</strong> property specifies the weight of a font:
+			<br><em>p.normal/thick { </em>
+			<br><em>font-weight: normal/bold; </em>
+			<br><em>} </em>
+			<br><h3>Styling Links</h3>
+      		<br>Links can be styled differently depending on what <strong>state</strong> they are in.
+      <ul>
+        <li>a:link - a normal, unvisited link </li>
+        <li>a:visited - a link the user has visited </li>
+        <li>a:hover - a link when the user mouses over it </li>
+        <li>a:active - a link the moment is is clicked </li>
+      </ul>
+      <em>
+        <br><strong> unvisited link </strong>
+        <br>a:link {
+        <br>color: red;
+        <br>}
+        <br>
+        <br><strong> visited link </strong>
+        <br>a:visited {
+        <br>color: green;
+        <br>}
+        <br>
+        <br><strong> mouse over link </strong>
+        <br>a:hover {
+        <br>color: hotpink;
+        <br>}
+        <br>
+        <br><strong> selected link </strong>
+        <br>a:active {
+        <br>color:blue;
+        <br>}
+      </em>
+      <br><h3>CSS Combinators </h3>
+      <br>A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+      <br>There are four different combinators in CSS:
+      <ul>
+        <li>descendant selector (space) </li>
+        <li>child selector (>) </li>
+        <li>adjacent sibling selector (+) </li>
+        <li>general sibling selector (~) </li>
+      </ul>
+      <br>
+      <br><strong>Descendant Selector</strong>
+      <br>The descendant selector matches all elements that are descendants of a specified element.
+      <em>
+        <br>&ltstyle&gt
+        <br>div p {
+        <br>background-color: yellow;
+        <br>}
+        <br>&lt/style&gt
+      </em>
+      <br>All element(in the body), which are in between off the &ltdiv&gt and the &lt/div&gt have the same style information.
+      <br>
+      <br><strong>Child Selector </strong>
+      <br>The child selector selects all elements that are the immediate children of a specified element.
+      <em>
+        <br>&ltstyle&gt
+        <br>div > p {
+        <br>background-color: yellow;
+        <br>}
+        <br>&lt/style&gt
+      </em>
+      <br> In this case all &ltp&gt inside of the &ltdiv&gt will be changed.
+      <br>
+      <br><strong>Adjacent Sibling Selector</strong>
+      <br>The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element.
+      <br>Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+      <em>
+        <br>&ltstyle&gt
+        <br>div + p {
+        <br>background-color: yellow;
+        <br>}
+        <br>&lt/style&gt
+      </em>
+      <br> The First Element after the &ltdiv&gt area will be changed.
+      <br>
+      <br><strong>General Sibling Selector </strong>
+      <br>The general sibling selector selects all elements that are siblings of a specified element.
+      <em>
+        <br>&ltstyle&gt
+        <br>div p {
+        <br>background-color: yellow;
+        <br>}
+        <br>&lt/style&gt
+      </em>
+      <br>In this case all &ltp&gt after the &ltdiv&gt will be change.
+      <br><h3>CSS Pseudo-classes</h3>
+      <br>A pseudo-class is used to define a special state of an element.
+      <br>For example, it can be used to:
+      <ul>
+        <li>Style an element when a user mouses over it </li>
+        <li>Style visited and unvisited links differently </li>
+        <li>Style an element when it gets focus </li>
+      </ul>
+	  <br><strong>Syntax</strong>
+	  <br>selector:pseudo-class {
+		<br>property:value;
+	  <br>}
+	  <br><strong>Hover on &ltdiv&gt </strong>
+	  <em>
+	  <br>&ltstyle&gt
+	  <br>div {
+	  <br>background-color: green;
+	  <br>color: white;
+	  <br>padding: 25px;
+	  <br>text-align: center;
+	  <br>}
+	  <br><strong>Later</strong>
+	  <br>div:hover {
+	  <br>background-color: blue;
+	  <br>}
+	  <br><strong>The "Button"</strong>
+	  <br>&ltdiv&gtMouse over me&lt/div&gt
+	  </em>
+	  <hr>
+    </p>
+    <h2>Reading Assigment Three - Lists and Tables</h2>
+    <p>
+          <strong>Html for Lists</strong>
+          <ol>
+            <li>Start tags for</li>
+            <ul>
+              <li>an ordered list</li>
+              <ul>
+                <li>With &ltol&gt</li>
+              </ul>
+              <li>an unordered list</li>
+              <ul>
+                <li>With &ltul&gt</li>
+              </ul>
+              <li>a description list</li>
+              <ul>
+                <li>With &ltdl&gt</li>
+              </ul>
+              <li>an list item</li>
+              <ul>
+                <li>With &ltli&gt</li>
+              </ul>
+              <li>a description term</li>
+              <ul>
+                <li>With &ltdt&gt</li>
+              </ul>
+              <li>a discription data</li>
+              <ul>
+                <li>With &ltdd&gt</li>
+              </ul>
+            </ul>
+          </ol>
+          <strong>Css for Lists</strong>
+          <ol>
+            <li>Make bullet a square</li>
+            <ul>
+              <li>style="list-style-type:square" (attribute)</li>
+            </ul>
+            <li>Make a bullet an image named "my_bullet.png"</li>
+            <ul>
+              <li>style="list-style-image:url('my_bullet.png')"</li>
+            </ul>
+            <li>Make bullet an uppercase roman number</li>
+            <ul>
+              <li>style="list-style-type: upper-roman"</li>
+            </ul>
+            <li>Set bullet position to be inside the list item's text flow</li>
+            <ul>
+              <li>style="list-style-position: inside"</li>
+            </ul>
+            <li>Set bullet position to be outnside the list item's text flow</li>
+            <ul>
+              <li>style="list-style-position: outside"</li>
+            </ul>
+          </ol>
+          <strong>Html for Tables</strong>
+          <ol>
+            <li>Start tags for</li>
+            <ul>
+              <li>a table</li>
+              <ul>
+                <li>&lttables&gt</li>
+              </ul>
+              <li>a table row</li>
+              <ul>
+                <li>&lttr&gt</li>
+              </ul>
+              <li>a table header</li>
+              <ul>
+                <li>&ltth&gt</li>
+              </ul>
+              <li>a table header cell</li>
+              <ul>
+                <li>&lttd&gt</li>
+              </ul>
+              <li>a table body</li>
+              <ul>
+                <li>&lttbody&gt</li>
+              </ul>
+              <li>a table cell</li>
+              <ul>
+                <li>&lttd&gt</li>
+              </ul>
+            </ul>
+          </ol>
+          <strong>Css for Tables</strong>
+          <ol>
+            <li>Black dotted border of 1 px width</li>
+            <ul>
+              <li>p {border: 1px solid black; outline: dotted;}</li>
+            </ul>
+            <li>Solid border of 1 px width having a red color and rounded corners</li>
+            <ul>
+              <li>p {border: 1px solid red; border-radius: 15px}</li>
+            </ul>
+            <li>Merge the borders of table cells so that they appear as one line</li>
+            <ul>
+              <li>table {border-collapse: collapse;}</li>
+            </ul>
+          </ol>
+          <hr>
+  </p>  <h2><br>Reading Assigment Four
+
+        <br><h3>.class Selector</h3>
+
+        <em>
+          <br>&ltstyle>
+          <br>.abc {
+          <br>background-color: yellow;
+          <br>}
+          <br>&lt/style>
+          <br>&ltbody>
+          <br>&ltdiv class="abc">
+          <br>&ltp>Hi, my name is Donald.&lt/p>
+          <br>&lt/body>
+        </em>
+
+        <br>
+
+        <h3><br>#id Selector</h3>
+
+        <em>
+          <br>&ltstyle>
+          <br>#first {
+          <br>background-color: yellow;
+          <br>}
+          <br>&lt/style>
+          <br>&ltbody>
+          <br>&ltp id="first">My name is Donald.&lt/p>
+          <br>&lt/body>
+        </em>
+
+        <br><h3>CSS Box Model</h3>
+
+        <br>All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.
+
+        <br>The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
+
+        <ul>
+          <li>Content - The content of the box, where text and images appear</li>
+          <li>Padding - Clears an area around the content. The padding is transparent</li>
+          <li>Border - A border that goes around the padding and content</li>
+          <li>Margin - Clears an area outside the border. The margin is transparent</li>
+        </ul>
+
+        <em>
+          <br>&ltstyle>
+          <br>div {
+          <br>background-color: blue;
+          <br>widht: 300px;
+          <br>border: 25px solid green;
+          <br>padding: 25px;
+          <br>margin: 25px;
+          <br>}
+          <br>&lt/style>
+          <br>&ltbody>
+          <br>&ltdiv> This is a text in the cool Box &lt/div>
+          <br>&lt/body>
+        </em>
+
+        <br>
+
+        <br><strong>Total element width = width + left padding + right padding + left border + right border + left margin + right margin</strong>
+
+        <br><h3>CSS Layout - float and clear</h3>
+
+        <br>The CSS <strong>float</strong> property specifies how an element should float.
+
+        <br>The CSS <strong>clear</strong> property specifies what elements can float beside the cleared element and on which side.
+
+        <br><h4>The Float Proberty</h4>
+
+        <br>The <strong>float</strong> property is used for positioning and layout on web pages.
+
+        <br>The <strong>float</strong> property can have one of the following values:
+
+        <ul>
+          <li>left - The element floats to the left of its container</li>
+          <li>right- The element floats to the right of its container</li>
+          <li>none - The element does not float (will be displayed just where it occurs in the text). This is default</li>
+          <li>inherit - The element inherits the float value of its parent</li>
+        </ul>
+
+        <br>In its simplest use, the <strong>float</strong> property can be used to wrap text around images.
+
+        <em>
+          <br>&ltstyle>
+          <br>img {
+          <br>float: right;
+          <br>}
+          <br>&lt/style>
+          <br>&ltbody>
+          <br>&ltimg src="pineapple.jpg" alt="Pineapple" style="widht:170px;height:170px;margin-left:15px;">
+          <br>&lt/body>
+        </em>
+
+        <br>
+
+        <br><strong>The image will be displayed just where it occurs in the text (float: none;)</strong>
+
+      	<br><h4>The clear Proberty</h4>
+
+      	<br>The <strong>clear</strong> property specifies what elements can float beside the cleared element and on which side.
+
+      	<br>The clear property can have one of the following values:
+
+      	<ul>
+      		<li>none - Allows floating elements on both sides. This is default</li>
+      		<li>left - No floating elements allowed on the left side</li>
+      		<li>right- No floating elements allowed on the right side</li>
+      		<li>both - No floating elements allowed on either the left or the right side</li>
+      		<li>inherit - The element inherits the clear value of its parent</li>
+      	</ul>
+
+      	<br>The most common way to use the clear property is after you have used a float property on an element.
+
+      	<br>When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.
+
+      	<br>he following example clears the float to the left. Means that no floating elements are allowed on the left side (of the div):
+
+
+      	<em>
+      		<br>&ltstyle>
+      		<br>.div1 {
+      		<br>float: left;
+      		<br>width: 100px;
+      		<br>height: 50px;
+      		<br>margin: 10px;
+      		<br>border: 3px solid green;
+      		<br>}
+      		<br>
+      		<br>.div2 {
+      		<br>border: 1px solid red;
+      		<br><strong>clear:</strong> left;
+      		<br>}
+      		<br>&lt/style>
+      		<br>&ltbody>
+      		<br>&ltdiv class="div1">div1&lt/div>
+      		<br>&ltdiv> class="div2">div2 with clear&lt/div>
+      		<br>&lt/body>
+      	</em>
+
+      	<br>
+
+      	<br><h4>Overflow</h4>
+
+      	<br><strong>If you try ti fix problems, use in the style the proberty <em>overflow: auto; or content: "";</em></strong>
+
+      	<br>
+
+      	<br><h4>Boxes</h4>
+
+      	<br><strong>If you want to have boxes, use the proberty <em>box-sizing: borderbox;</em> in style. It also can be use with pictures. You can edit the box with the <em>height</em> proberty.</strong>
+
+
+
+
+      </p>
+
+</body>
+</html>
